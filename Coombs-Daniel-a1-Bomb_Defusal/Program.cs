@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+bool complete = false;
 //preamble
 Console.WriteLine("You wake up bound to a hard metal chair. \nThe room is too dark for you to see anything, until a blinding light " +
     "illuminates a table in front of you. After a few \nseconds, your eyes adjust and you see a strange device on the table, " +
@@ -44,12 +45,27 @@ else if (choice_1 == 2)
         else if (choice_3 == 2)
         { //Sliders
             Console.WriteLine("You notice the notches on each of the squares range from 1 - 8. After some time working on the puzzle,\n" +
-                "you manage to sole the puzzle. You hear a click from inside the device, but there is no explosion, so you can assume \n" +
+                "you manage to solve the puzzle. You hear a click from inside the device, but there is no explosion, so you can assume \n" +
                 "you did something right.");
+            Console.WriteLine("You check the timer again.\n\n 15:25... 15:24... 15:23... What will you do now? \n1. Check the wires. \n 2. Press the big red button.");
+            int choice_4 = int.Parse(Console.ReadLine());
+
+            if (choice_4 == 2)
+            { //Big red button
+                Console.WriteLine("BOOM \n\n GAME OVER.");
+            }
+            else if (choice_4 == 1)
+            {//Wires
+                Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
+                Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
+                int choice_5 = int.Parse(Console.ReadLine());
+            }
 
         } else if (choice_3 == 1)
         { //Wires
-            Console.WriteLine("You can assume that ");
+            Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
+            Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
+            int choice_5 = int.Parse(Console.ReadLine());
         }
 
     }
@@ -70,6 +86,24 @@ else if (choice_1 == 1)
         Console.WriteLine("You notice the notches on each of the squares range from 1 - 8. After some time working on the puzzle,\n" +
             "you manage to sole the puzzle. You hear a click from inside the device, but there is no explosion, so you can assume \n" +
             "you did something right.");
+        Console.WriteLine("You check the timer again.\n\n 15:25... 15:24... 15:23... What will you do now? \n1. Check the wires. \n 2. Press the big red button.");
+        int choice_4 = int.Parse(Console.ReadLine());
 
+        if (choice_4 == 2)
+        { //Big red button
+            Console.WriteLine("BOOM \n\n GAME OVER.");
+        }
+        else if (choice_4 == 1)
+        {//Wires
+            Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
+            Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
+            int choice_5 = int.Parse(Console.ReadLine());
+        }
+    }
+    else if (choice_3 == 1)
+    { //Wires
+        Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
+        Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
+        int choice_5 = int.Parse(Console.ReadLine());
     }
 }
