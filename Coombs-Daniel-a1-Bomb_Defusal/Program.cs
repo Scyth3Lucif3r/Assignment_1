@@ -65,108 +65,114 @@ else if (choice_1 == 2)
                 }
                 else if (choice_5 == 4)
                 {
-                    Console.WriteLine("snip. \n...\nThe top of the device clicks open. You see an alphanumberic lock with 8 spots, arranged in two groups of 4 \n" +
-                        "What will you input?");
-                    String choice_6 = Console.ReadLine();
-
-                    if (choice_6.ToLower() == "good luck)")
-                    {
-                        Console.WriteLine("The box clicks open. A feeling of dread pervades your entire being as you see the inside of the\n" +
-                            "\"bomb\" is actually hollow, the only contents inside being your spouse's ring. \n\n THE END.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("click. BOOM \n\n GAME OVER.");
-                    }
+                    Console.WriteLine("The box clicks open. A feeling of dread pervades your entire being as you see the inside of the\n" +
+                    "\"bomb\" is actually hollow, the only contents inside being your spouse's ring. \n\n THE END.");
                 }
 
             }
-            else if (choice_3 == 1)
-            { //Wires
-                Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
-                Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
-                int choice_5 = int.Parse(Console.ReadLine());
-
-                if (choice_5 == 1 || choice_5 == 2 || choice_5 == 3)
-                {
-                    Console.WriteLine("snip. BOOM \n\n GAME OVER.");
-                }
-                else if (choice_5 == 4)
-                {
-                    Console.WriteLine("snip. \n...\nNothing happens, so you must have done something right. The timer now reads\n" +
-                        "20:01... 20:00... 19:59...\nWhat will you do now?");
-                }
-            }
-
         }
+        else if (choice_3 == 1)
+        { //Wires
+            Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
+            Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
+            int choice_5 = int.Parse(Console.ReadLine());
 
-    }
-}
-    if (choice_1 == 1)
-    { // Device inspection
-        Console.WriteLine("You look over the device and notice multiple details about it. \n1. Four wires. One red, one green, and one blue and one Copper." +
-                "\n2. A puzzle made up of a 3x3 of squares with notches, except the bottom left square is missing. \n3. A big red button ");
-        int choice_3 = int.Parse(Console.ReadLine());
-
-        if (choice_3 == 3)
-        { //Big red button
-            Console.WriteLine("BOOM \n\n GAME OVER.");
-        }
-        else if (choice_3 == 2)
-        { //Sliders
-            Console.WriteLine("You notice the notches on each of the squares range from 1 - 8. After some time working on the puzzle,\n" +
-                "you manage to solve the puzzle. You hear a click from inside the device, but there is no explosion, so you can assume \n" +
-                "you did something right.");
-            Console.WriteLine("You check the timer again.\n\n 15:25... 15:24... 15:23... What will you do now? \n1. Check the wires. \n 2. Press the big red button.");
-            int choice_4 = int.Parse(Console.ReadLine());
-
-            if (choice_4 == 2)
-            { //Big red button
-                Console.WriteLine("BOOM \n\n GAME OVER.");
+            if (choice_5 == 1 || choice_5 == 2 || choice_5 == 3)
+            {
+                Console.WriteLine("snip. BOOM \n\n GAME OVER.");
             }
-            else if (choice_4 == 1)
-            {//Wires
-                Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
-                Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
-                int choice_5 = int.Parse(Console.ReadLine());
+            else if (choice_5 == 4)
+            {
+                Console.WriteLine("snip. \n...\nNothing happens, so you must have done something right. The timer now reads\n" +
+                    "20:01... 20:00... 19:59...\nWhat will you do now? \n1. Check the box puzzle \n2.Push the Big Red button");
+                int choice_8 = int.Parse(Console.ReadLine());
 
-                if (choice_5 == 1 || choice_5 == 2 || choice_5 == 3)
-                { //Wrong Wire
-                    Console.WriteLine("snip. BOOM. \n\n GAME OVER.");
+                if (choice_8 == 2)
+                {
+                    //Big red button
+                    Console.WriteLine("BOOM \n\n GAME OVER.");
                 }
-                else if (choice_5 == 4)
-                { //Right Wire
+                else if (choice_8 == 1)
+                {
+                    Console.WriteLine("You notice the notches on each of the squares range from 1 - 8. After some time working on the puzzle,\n" +
+                                "you manage to solve the puzzle. You hear a click from inside the device, and the top pops open.");
                     Console.WriteLine("The box clicks open. A feeling of dread pervades your entire being as you see the inside of the\n" +
                         "\"bomb\" is actually hollow, the only contents inside being your spouse's ring. \n\n THE END.");
                 }
             }
-            else if (choice_3 == 1)
-            { //Wires
-                Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
-                Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
-                int choice_5 = int.Parse(Console.ReadLine());
+        }
 
-                if (choice_5 == 1 || choice_5 == 2 || choice_5 == 3)
-                { //Wrong Wire
-                    Console.WriteLine("snip. BOOM \n\n GAME OVER.");
-                }
-                else if (choice_5 == 4)
-                { //Right Wire
-                    Console.WriteLine("snip. \n...\nNothing happens, so you must have done something right. The timer now reads\n" +
-                        "20:01... 20:00... 19:59...\nWhat will you do now?\n1.The squares puzzle.\n2.The Big Red Button.");
-                    int choice_7 = int.Parse(Console.ReadLine());
+    }
 
-                    if (choice_7 == 2)
-                    { //Big red button
-                        Console.WriteLine("BOOM \n\n GAME OVER.");
-                    } else
-                    {
-                        Console.WriteLine("You notice the notches on each of the squares range from 1 - 8. After some time working on the puzzle,\n" +
-                                        "you manage to solve the puzzle. You hear a click from inside the device, and the top pops open.");
-                        Console.WriteLine("The box clicks open. A feeling of dread pervades your entire being as you see the inside of the\n" +
-                            "\"bomb\" is actually hollow, the only contents inside being your spouse's ring. \n\n THE END.");
-                    }
-                }
+}
+
+if (choice_1 == 1)
+{ // Device inspection
+    Console.WriteLine("You look over the device and notice multiple details about it. \n1. Four wires. One red, one green, and one blue and one Copper." +
+            "\n2. A puzzle made up of a 3x3 of squares with notches, except the bottom left square is missing. \n3. A big red button ");
+    int choice_3 = int.Parse(Console.ReadLine());
+
+    if (choice_3 == 3)
+    { //Big red button
+        Console.WriteLine("BOOM \n\n GAME OVER.");
+    }
+    else if (choice_3 == 2)
+    { //Sliders
+        Console.WriteLine("You notice the notches on each of the squares range from 1 - 8. After some time working on the puzzle,\n" +
+            "you manage to solve the puzzle. You hear a click from inside the device, but there is no explosion, so you can assume \n" +
+            "you did something right.");
+        Console.WriteLine("You check the timer again.\n\n 15:25... 15:24... 15:23... What will you do now? \n1. Check the wires. \n 2. Press the big red button.");
+        int choice_4 = int.Parse(Console.ReadLine());
+
+        if (choice_4 == 2)
+        { //Big red button
+            Console.WriteLine("BOOM \n\n GAME OVER.");
+        }
+        else if (choice_4 == 1)
+        {//Wires
+            Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
+            Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
+            int choice_5 = int.Parse(Console.ReadLine());
+
+            if (choice_5 == 1 || choice_5 == 2 || choice_5 == 3)
+            { //Wrong Wire
+                Console.WriteLine("snip. BOOM. \n\n GAME OVER.");
+            }
+            else if (choice_5 == 4)
+            { //Right Wire
+                Console.WriteLine("The box clicks open. A feeling of dread pervades your entire being as you see the inside of the\n" +
+                    "\"bomb\" is actually hollow, the only contents inside being your spouse's ring. \n\n THE END.");
             }
         }
     }
+    else if (choice_3 == 1)
+    { //Wires
+        Console.WriteLine("You can assume that the pliers on the table are meant to cut the wires, but which one?");
+        Console.WriteLine("1. Red \n2.Green \n 3.Blue \n 4.Copper");
+        int choice_5 = int.Parse(Console.ReadLine());
+
+        if (choice_5 == 1 || choice_5 == 2 || choice_5 == 3)
+        { //Wrong Wire
+            Console.WriteLine("snip. BOOM \n\n GAME OVER.");
+        }
+        else if (choice_5 == 4)
+        { //Right Wire
+            Console.WriteLine("snip. \n...\nNothing happens, so you must have done something right. The timer now reads\n" +
+                "20:01... 20:00... 19:59...\nWhat will you do now?\n1.The squares puzzle.\n2.The Big Red Button.");
+            int choice_7 = int.Parse(Console.ReadLine());
+
+            if (choice_7 == 2)
+            { //Big red button
+                Console.WriteLine("BOOM \n\n GAME OVER.");
+            }
+            else
+            {
+                Console.WriteLine("You notice the notches on each of the squares range from 1 - 8. After some time working on the puzzle,\n" +
+                                "you manage to solve the puzzle. You hear a click from inside the device, and the top pops open.");
+                Console.WriteLine("The box clicks open. A feeling of dread pervades your entire being as you see the inside of the\n" +
+                    "\"bomb\" is actually hollow, the only contents inside being your spouse's ring. \n\n THE END.");
+            }
+        }
+
+    }
+}
